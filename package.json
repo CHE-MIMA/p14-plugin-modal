@@ -1,6 +1,6 @@
 {
   "name": "plugin-react-component-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "plugin d'un composent react modal",
   "main": "index.js",
   "repositery":{

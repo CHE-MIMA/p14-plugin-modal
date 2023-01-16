@@ -1,5 +1,5 @@
 import React from 'react';
-const pluginReactComponentModal = ({ openModal, closeModal }) => {
+const PluginReactComponentModal = ({ openModal, closeModal }) => {
     if (openModal) {
         console.log("modal open");
         return (
@@ -12,4 +12,4 @@ const pluginReactComponentModal = ({ openModal, closeModal }) => {
         );
     }
 };
-export default pluginReactComponentModal
+export default PluginReactComponentModal

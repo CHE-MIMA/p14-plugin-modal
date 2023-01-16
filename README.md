@@ -4,7 +4,8 @@ Modal component for React.
 
 # Installation
 
- Install with npm
+Install with npm: 
+
 npm i plugin-react-component-modal
 
 
@@ -18,7 +19,6 @@ return (
 
         openModal={}
         closeModal={}
-        
-  />
+   />
 
 )

@@ -7,7 +7,7 @@ const pluginReactComponentModal = ({ openModal, closeModal }) => {
                 <div className="modal-content">
                     <p className="close-modal" onClick={closeModal}>x</p>
                 </div>
-                <h2 className="title-modal">Employee Created !</h2>
+                <h2 className="titleModal">Employee Created !</h2>
             </div>
         );
     }

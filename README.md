@@ -1,15 +1,17 @@
-modal Projet14 openClassrooms
+# modal Projet14 openClassrooms
 
 Modal component for React.
-Installation
+
+# Installation
 
 # Install with npm
 npm i plugin-react-component-modal
 
 
-Usage
+# Usage
 
 import Modal from "plugin-react-component-modal";
+
 return (
   <Modal
         openModal={}

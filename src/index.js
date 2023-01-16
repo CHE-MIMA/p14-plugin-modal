@@ -1,0 +1,15 @@
+import React from 'react';
+const pluginReactComponentModal = ({ openModal, closeModal }) => {
+    if (openModal) {
+        console.log("modal open");
+        return (
+            <div className="modal-container">
+                <div className="modal-content">
+                    <p className="close-modal" onClick={closeModal}>x</p>
+                </div>
+                <h2 className="title-modal">Employee Created !</h2>
+            </div>
+        );
+    }
+};
+export default pluginReactComponentModal

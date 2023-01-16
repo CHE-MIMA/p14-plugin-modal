@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "plugin d'un composent react modal",
   "main": "index.js",
+  "repositery":{
+    "type":"git",
+    "url": "https://github.com/CHE-MIMA/p14-plugin-modal.git"
+  }, 
+ 
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-file index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

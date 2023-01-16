@@ -15,8 +15,10 @@ import Modal from "plugin-react-component-modal";
 return (
   
   <Modal
+
         openModal={}
         closeModal={}
+        
   />
 
 )

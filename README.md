@@ -17,25 +17,30 @@ import React, { useState } from 'react';
 
 import Modal from 'plugin-react-component-modal';
 
+
 function Form() {
-  
+
  const [openModal, setOpenModal] = useState();
 
+ const [firstName, setFirstName] = useState("");
 
- const closeModalOnClick = () => {
-        setOpenModal(false);
-    }
     
-    const handleSubmit = (e) => {
+        const closeModalOnClick = ( ) => {
+        setOpenModal(false);
+        }
+    
+       const handleSubmit = (e) => {
         e.preventDefault();
         setOpenModal(true);
         }
 
   return (
+
     <div>
      <form onSubmit={handleSubmit}  id="form">
       <label htmlFor="first-name">First Name</label>
-        <input type="text" id="first-name" name='firstName'/>
+        <input type="text" id="first-name" name='firstName' onChange={(e) => setFirstName(e.target.value)}
+          value={firstName}/>
             <div className='Btn'>
                     <button type='submit'>Submit</button>
             </div>
@@ -45,9 +50,8 @@ function Form() {
               title="employé created !"
               closeButton="x" />
     </div>
+  );}
 
-  );
-}
 
 ## Options
 OpenModal: boolean

@@ -18,12 +18,12 @@ import React, { useState } from 'react';
 import Modal from 'plugin-react-component-modal';
 
 
-function Form() {
+      function Form() = ( ) => {
 
- const [openModal, setOpenModal] = useState();
+         const [openModal, setOpenModal] = useState();
 
- const [firstName, setFirstName] = useState("");
-
+        const [firstName, setFirstName] = useState("");
+    
     
         const closeModalOnClick = ( ) => {
         setOpenModal(false);
@@ -34,7 +34,7 @@ function Form() {
         setOpenModal(true);
         }
 
-  return (
+   return (
 
     <div>
      <form onSubmit={handleSubmit}  id="form">
@@ -55,13 +55,17 @@ function Form() {
 
 ## Options
 OpenModal: boolean
+
 Control modal state from component
 
 closeModal: Function
+
 Handle modal closing.
 
 title: JSX.Element | string
+
 Place here your Content of title
 
 closeButton: (JSX.Element | string)
+
 Content of your closing button

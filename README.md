@@ -13,14 +13,13 @@ npm i plugin-react-component-modal
 
 Here is a simple example of plugin-react-component-modal being used in an form.
 
-import React, { useState } from 'react';
+      import React, { useState } from 'react';
 
-import Modal from 'plugin-react-component-modal';
-
+      import Modal from 'plugin-react-component-modal';
 
       function Form() = ( ) => {
 
-         const [openModal, setOpenModal] = useState();
+        const [openModal, setOpenModal] = useState();
 
         const [firstName, setFirstName] = useState("");
     
@@ -33,24 +32,25 @@ import Modal from 'plugin-react-component-modal';
         e.preventDefault();
         setOpenModal(true);
         }
+       return (
 
-   return (
-
-    <div>
-     <form onSubmit={handleSubmit}  id="form">
-      <label htmlFor="first-name">First Name</label>
-        <input type="text" id="first-name" name='firstName' onChange={(e) => setFirstName(e.target.value)}
+       <div>
+         <form onSubmit={handleSubmit}  id="form">
+         <label htmlFor="first-name">First Name</label>
+         <input type="text" id="first-name" name='firstName' onChange={(e) => setFirstName(e.target.value)}
           value={firstName}/>
             <div className='Btn'>
                     <button type='submit'>Submit</button>
             </div>
-      </form>
-       <Modal openModal={openModal}
+         </form>
+         <Modal openModal={openModal}
               closeModal={closeModalOnClick}
               title="employé created !"
               closeButton="x" />
-    </div>
-  );}
+        </div> 
+      ); }
+  
+   
 
 
 ## Options
